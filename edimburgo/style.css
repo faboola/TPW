@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* questa regola si applica a tutti i discendenti di BODY */
+    background: #cbd1d3;
+}
+
+h1,h2 {
+    /*posso combinare due o più selettori separandoli con una virgola*/
+    color: #103a4d;
+}
+   
+
+
+a {
+    color:#2c83ac;
+    text-decoration: none; /*text-decoration: underline serve per il sottolineato. None lo disattiva */;
+
+    font-weight: bold;
+}
+
+.wrapper {
+    width: 1200px;
+    margin-left:auto;
+    margin-right: auto;
+
+    background: #fefefe;
+    padding:16px;
+}
+
+.citazione {
+    font-style: italic;
+    text-align: center;
+}
+
+.consigli {
+    border: 1px solid #2c83ac;
+   
+
+    /* questa è la proprietà shorthand, equivale a:
+    border-width: 1px;
+    border-style: solid;
+    border-color: dodgerblue;
+    */
+
+    /*margine interno:*/
+
+    padding:8px 16px 8px 16px;
+    /*proprietà shorthand, equivale a:
+
+    padding-top:8px;
+    padding-right:16px;
+    padding-bottom:8px;
+    padding-left:16px;
+    
+    se scrivo un valore solo, vale per tutti e 4 i lati.
+
+    La proprietà MARGIN invece mette un margine ESTERNO, e funziona con la stessa logica.
+    
+    */
+
+    border-radius: 6px;
+
+}
+
+
+
