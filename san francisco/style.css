@@ -1,0 +1,67 @@
+body {
+    font-family: 'Mukta', sans-serif;
+    background: url('images/sfondo.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; /*adatta lo sfondo al contenitore e riempi lo spazio*/
+}
+
+blockquote, .subtitle { /*seleziono più elementi. NB: separo i selettori con la virgola*/
+    font-family: 'Noticia Text', serif;
+}
+
+blockquote {
+   
+    margin: 3rem auto;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 800; /*valore dello spessore 800 - vedi font Mukta incluso nel CSS*/
+    /*lo spessore può essere normal, bold oppure un valore da 100 (thin) a 900 (extra bold)*/
+
+    text-transform: uppercase; /*tutto maiuscolo*/
+}
+
+
+h2 span { /*tutti gli SPAN dentro H2*/
+    
+    font-size: 1.25rem; /*1rem = 1 unità base; dimensione default del font*/
+    font-style: italic;
+    
+    display: block; /*trasformo SPAN in elemento blocco e va a capo*/
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.alignLeft {
+    width: 40%; /*grandi il 40% del wrapper*/
+    float:left;
+    margin-right: 1rem;
+}
+
+.alignRight {
+    width: 40%; /*grandi il 40% del wrapper*/
+    float:right;
+    margin-left: 1rem;
+}
+
+.imgFull {
+    width: 100%;
+    display: block; /*per centrare l'immagine: forzo display:block e imposto i margini sx e dx auto*/
+   margin:0 auto; 
+}
+
+.wrapper {
+    width: 70%;
+    margin:0 auto;
+    background: rgba(250,250,250,0.5);
+    padding:1rem;
+
+}
+
+
+
