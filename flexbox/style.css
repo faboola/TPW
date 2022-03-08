@@ -1,0 +1,34 @@
+.container {
+    /*il MAIN AXIS di default è l'asse X - orizzontale*/
+    display: flex; /*applicare la proprietà flex ai figli*/
+    justify-content: space-between; /*justify-content: funziona sul MAIN AXIS*/
+    align-items: center;  /*allinea sull'asse incrociato (Y)*/
+
+    flex-wrap: wrap;
+
+    background: #666;
+    height:500px;
+}  
+
+.item {
+    width:33.33%;
+}
+
+
+.box1   {
+    background:#b1b100;
+    order:1;
+}
+
+.box2 {
+    background:#02a710;
+}
+
+.box3 {
+    background: #b50767;
+}
+
+.box4 {
+    background: #158ad2;
+    order:-1;
+}
