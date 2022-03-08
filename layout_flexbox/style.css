@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    /*imposto il box-model border-box per evitare che i margini interni 
+    vadano a allargare i miei elementi*/
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;/*allineamento sul MAIN AXIS (orizz.)*/
+    align-items: center;  /*allineamento sul CROSS AXIS (vert.)*/
+}
+
+#mainNav ul {
+    list-style-type: none;
+    display: flex; /*affiancare gli elementi LI dentro UL*/
+}
+
+#mainNav li {
+    padding:0.5rem 1rem;
+}
+
+#mainNav a {
+    text-decoration:none; /*tolgo il sottolineato sui link nel menu*/
+}
+
+.logo img {
+    width:8rem; /*riduco le dimensioni del logo*/
+}
+
+.offerta {
+    display: flex;
+}
+
