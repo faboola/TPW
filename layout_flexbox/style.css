@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     /*imposto il box-model border-box per evitare che i margini interni 
-    vadano a allargare i miei elementi*/
+    vadano a allargare i miei elementi. NOTA: su Bootstrap non sarà più necessario */
 }
 
 body {
@@ -13,6 +13,7 @@ header {
     justify-content: space-between;/*allineamento sul MAIN AXIS (orizz.)*/
     align-items: center;  /*allineamento sul CROSS AXIS (vert.)*/
 }
+
 
 #mainNav ul {
     list-style-type: none;
@@ -31,7 +32,117 @@ header {
     width:8rem; /*riduco le dimensioni del logo*/
 }
 
-.offerta {
-    display: flex;
+.button {
+    
 }
 
+/* -------------------------------------------------------------------------- */
+/*                                    HERO                                    */
+/* -------------------------------------------------------------------------- */
+
+#hero {
+
+    height:90vh; /*misura relativa al 100% del viewport(finestra del browser)*/
+
+    background:url('https://source.unsplash.com/1200x700/?sunset');
+    background-repeat: no-repeat; /*il background non deve ripetersi!*/
+
+    background-size:cover; /*adatta lo sfondo al contenuto*/
+    background-position: center center; /*centra lo sfondo in orizzontale e verticale*/
+    margin-bottom: 3rem;
+
+    /*se voglio lo sfondo FISSO che non scorre, allora:
+    background-attachment:fixed;
+    */
+
+    /*centro il div callToAction in orizzontale e verticale*/
+    display: flex; 
+    justify-content: center; /*centrare in orizzontale*/
+    align-items: center; /*centrare in verticale*/
+}
+
+.callToAction h1 {
+    font-size: 3rem;
+    text-transform: uppercase; /*tutto maiuscolo!*/
+    font-weight: 900; /*900 è lo spessore massimo del font. NOTA: se usiamo uno spessore, deve essere supportato dal font*/
+}
+
+.button {
+    background:#3D8BCF;
+    color:#efefef;
+    padding: 0.5rem 2rem;
+    border-radius: 4px;
+    
+    display: inline-block;
+}
+
+a.button:hover { /* tutti i .button al passaggio del mouse*/
+    background: #2a7abd;
+   display:inline-block;
+   transform:scale(1.2)
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   OFFERTE                                  */
+/* -------------------------------------------------------------------------- */
+
+.offerta {
+    display: flex;
+    align-items: center; /*align-items agisce sul CROSS-AXIS (in questo caso asse verticale)*/
+    margin-bottom: 3rem; 
+}
+
+.offertaImg, .offertaTesto {
+    width: 50%;
+}
+
+.offertaTesto {
+    padding:1rem;
+}
+
+.offertaImg img {
+    width: 100%;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    CLAIM                                   */
+/* -------------------------------------------------------------------------- */
+
+#claim {
+    font-size: 2.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   GALLERY                                  */
+/* -------------------------------------------------------------------------- */
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.galleryItem {
+    width:25%;
+    padding:0.5rem;
+}
+
+.galleryItem img {
+    display:block; /*FIX: serve per evitare spazi indesiderati sotto l'immagine*/
+    width: 100%;
+    height: auto;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   FOOTER                                   */
+/* -------------------------------------------------------------------------- */
+
+#mainFooter {
+    background: #3D8BCF;
+    color:#efefef;
+    margin-top: 3rem;
+    text-align: center;
+
+    padding: 1.5rem;
+}
