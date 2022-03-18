@@ -1,0 +1,27 @@
+
+/*stili comuni a tutte le dimensioni schermo*/
+
+* {
+    box-sizing: border-box;
+}
+
+.image img {
+    width: 100%; /*allargare immagine per riempire il DIV*/
+    height:auto;
+}
+
+
+@media (min-width: 768px) { /*schermi medi, da 768px*/
+  
+    .image {
+        width: 50%;
+    }
+} /*graffa che chiude il blocco della media query*/
+
+
+@media (min-width:992px) { /*schemi più grandi, da 992px*/
+    .image {
+        width: 25%;
+    }
+} /*graffa che chiude il blocco della media query*/
+
