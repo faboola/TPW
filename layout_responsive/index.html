@@ -5,42 +5,179 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
 
-    <header id="mainHeader">
-        <div id="topBar">
-            <div class="logo">
-                <img src="logo.svg" alt="LOGO">
+    <header id="mainHeader"> <!-- sfondo blu -->
+        <div class="container">
+            <div id="topBar">
+                <div class="logo">
+                    <img src="logo.svg" alt="LOGO">
+                </div>
+                <nav id="topNav" class="topMenu">
+                    <ul>
+                        <li><a class="button" href="#">Registra la tua struttura</a></li>
+                        <li><a class="button white" href="#">Iscriviti</a></li>
+                        <li><a class="button white" href="#">Accedi</a></li>
+                    </ul>
+                </nav>
             </div>
-
-            <nav id="topNav">
-                <ul>
-                    <li><a href="#">Registra la tua struttura</a></li>
-                    <li><a href="#">Iscriviti</a></li>
-                    <li><a href="#">Accedi</a></li>
-                </ul>
-            </nav>
-
-            <nav id="bottomNav">
-                <ul>
-                    <li><a href="#">Soggiorni</a></li>
-                    <li><a href="#">Voli</a></li>
-                    <li><a href="#">Volo + Hotel</a></li>
-                    <li><a href="#">Noleggio Auto</a></li>
-                    <li><a href="#">Attrazioni</a></li>
-                </ul>
-            </nav>
-
+            <nav id="bottomNav" class="topMenu">
+                    <ul>
+                        <li><a href="#"> <i class="bi bi-usb-mini"></i> Soggiorni</a></li>
+                        <li><a href="#"><i class="bi bi-send"></i> Voli</a></li>
+                        <li><a href="#"> <i class="bi bi-building"></i> Volo + Hotel</a></li>
+                        <li><a href="#"><i class="bi bi-lightning"></i> Noleggio Auto</a></li>
+                        <li><a href="#"> <i class="bi bi-binoculars"></i> Attrazioni</a></li>
+                    </ul>
+             </nav>
             <div class="pageTitle">
-                <h1>Trova l'alloggio che fa per te</h1>
-                <p>Cerca offerte su hotel, case e tanto altro...</p>
+                    <h1>Trova l'alloggio che fa per te</h1>
+                    <p>Cerca offerte su hotel, case e tanto altro...</p>
             </div>
-        
         </div>
+        
     </header>
+
+    <main id="mainContent">
+        
+        <div id="tipoViaggio">
+
+            <h2>Che tipo di viaggio vorresti fare?</h2>
+
+            <div class="tipoViaggioGrid">
+
+                <div class="viaggioItem">
+                    <div class="viaggioImage">
+                        <img src="https://source.unsplash.com/200x200/?beach" alt="Mare">
+                    </div>
+
+                    <div class="viaggioDesc">
+                        Mare
+                    </div>
+                </div>
+
+                <!-- fine viaggioItem -->
+
+                <div class="viaggioItem">
+                    <div class="viaggioImage">
+                        <img src="https://source.unsplash.com/200x200/?mountains" alt="Montagna">
+                    </div>
+
+                    <div class="viaggioDesc">
+                        Montagna
+                    </div>
+                </div>
+                 <!-- fine viaggioItem -->
+
+                <div class="viaggioItem">
+                    <div class="viaggioImage">
+                        <img src="https://source.unsplash.com/200x200/?lake" alt="Laghi">
+                    </div>
+
+                    <div class="viaggioDesc">
+                        Laghi
+                    </div>
+                </div>
+                 <!-- fine viaggioItem -->
+
+                <div class="viaggioItem">
+                    <div class="viaggioImage">
+                        <img src="https://source.unsplash.com/200x200/?forest" alt="Relax">
+                    </div>
+
+                    <div class="viaggioDesc">
+                        Relax nella natura
+                    </div>
+                </div>
+                 <!-- fine viaggioItem -->
+
+                <div class="viaggioItem">
+                    <div class="viaggioImage">
+                        <img src="https://source.unsplash.com/200x200/?city" alt="Città">
+                    </div>
+
+                    <div class="viaggioDesc">
+                        Città
+                    </div>
+                </div>
+                 <!-- fine viaggioItem -->
+            </div>
+
+        </div>
+        <!-- fine #tipoViaggio -->
+
+        <div id="elencoCitta">
+
+            <div class="elencoCittaGrid">
+
+                <div class="cittaItem" style="background-image:url('https://source.unsplash.com/550x270/?florence')">
+
+                    <div class="cittaDesc">
+                        <div class="cittaNome">Firenze</div>
+                    </div>
+
+                </div>
+
+                <div class="cittaItem" style="background-image:url('https://source.unsplash.com/550x270/?rome')">
+
+                    <div class="cittaDesc">
+                        <div class="cittaNome">Roma</div>
+                    </div>
+
+                </div>
+
+                <div class="cittaItem" style="background-image:url('https://source.unsplash.com/550x270/?copenhagen')">
+
+                    <div class="cittaDesc">
+                        <div class="cittaNome">Copenhagen</div>
+                    </div>
+
+                </div>
+
+                <div class="cittaItem" style="background-image:url('https://source.unsplash.com/550x270/?paris')">
+
+                    <div class="cittaDesc">
+                        <div class="cittaNome">Parigi</div>
+                    </div>
+
+                </div>
+
+                <div class="cittaItem" style="background-image:url('https://source.unsplash.com/550x270/?manhattan')">
+
+                    <div class="cittaDesc">
+                        <div class="cittaNome">New York</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <footer id="mainFooter">
+
+        <ul class="footerMenu">
+            <li><a href="">Lorem.</a></li>
+            <li><a href="">Aperiam?</a></li>
+            <li><a href="">Facilis?</a></li>
+            <li><a href="">Eum!</a></li>
+            <li><a href="">Modi!</a></li>
+        </ul>
+    
+    </footer>
     
 </body>
 </html>

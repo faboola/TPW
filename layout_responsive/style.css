@@ -1,0 +1,144 @@
+/* -------------------------------------------------------------------------- */
+/*                       REGOLE BASE PER TUTTI I DEVICE                       */
+/* -------------------------------------------------------------------------- */
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Hind',sans-serif;
+}
+
+.container {
+    width:96%;
+    margin:0 auto;
+}
+
+#mainHeader {
+    background:#1e4ba4;
+    color: #efefef;
+}
+
+#mainHeader a { /*tutti i link dentro mainHeader*/
+    color:#efefef;
+    text-decoration: none;
+}
+
+.logo {
+    width: 6rem;
+}
+
+#topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topMenu ul {
+    list-style: none;
+    display: flex;
+    margin:0;
+    padding:0;
+}
+
+.topMenu li {
+    margin-left: 1rem;
+}
+
+.button {
+   
+    border:1px solid #efefef;
+    padding:0.25rem 0.5rem;
+    border-radius:3px;
+}
+
+.button.white {
+    background: #efefef !important;
+    color:#1e4ba4 !important;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                SEZIONE MAIN                                */
+/* -------------------------------------------------------------------------- */
+
+.tipoViaggioGrid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.viaggioItem {
+    width: 50%;
+}
+
+.viaggioItem img {
+    width: 100%;
+}
+
+
+.elencoCittaGrid {
+    display: flex; /*fai affiancare gli elementi*/
+    flex-wrap: wrap; /*vai a capo quando finisce lo spazio*/
+}
+
+.cittaItem {
+
+    width:100%;
+    height:20rem;
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   FOOTER                                   */
+/* -------------------------------------------------------------------------- */
+#mainFooter {
+    background: #1e4ba4;
+    padding-top:3rem;
+    padding-bottom: 3rem;
+}
+
+#mainFooter a {
+    color:#efefef;
+}
+
+.footerMenu {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly; /*spazia equamente sul contenitore*/
+    margin:0;  /*rimuovo margini lista*/
+    padding:0; /*rimuovo margini interni lista */
+   
+}
+
+
+
+@media (min-width:992px) {
+    /* REGOLE PER SCHERMI GRANDI */ 
+
+    .viaggioItem { /*su desktop occupa 1/5 dello spazio */
+        width:20%;
+    }
+
+    .cittaItem { /*dimensione su schermi grandi*/
+        width:33.3%;
+    }
+
+    .cittaItem:nth-of-type(1), .cittaItem:nth-of-type(2) {
+        width:50%;
+    }
+
+    .container {
+        width:80%;
+       /* margin:0 auto; non serve perché eredita dalla regola precedente*/
+    }
+
+}
+
