@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+#mainHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainMenu {
+    display: none;
+}
+
+.mainMenu ul {
+    display: flex;
+    justify-content: space-evenly;
+
+    list-style-type: none;
+
+}
+
+.mainMenu li {
+    padding:0.2rem 1rem;
+}
+
+#mainHeader.is-mobile .mainMenu {
+    display: block;
+}
+
+#mainHeader.is-mobile .mainMenu ul {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+@media (min-width:992px) {
+    #navIcon {
+        display: none;
+    }
+
+    .mainMenu {
+        display: block;
+    }
+}
+

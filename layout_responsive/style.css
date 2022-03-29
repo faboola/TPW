@@ -61,6 +61,7 @@ body {
 
 
 
+
 /* -------------------------------------------------------------------------- */
 /*                                SEZIONE MAIN                                */
 /* -------------------------------------------------------------------------- */
@@ -71,13 +72,33 @@ body {
 }
 
 .viaggioItem {
-    width: 50%;
+   width: 50%;
+
+    position:relative;
+
 }
 
 .viaggioItem img {
     width: 100%;
+    display: block; /*serve per evitare che si creino degli spazi indesiderati sotto le immagini*/
+    /*gli spazi appaiono perché l'immagine è un elemento in linea. Forzando display:block risolvo*/
 }
 
+.viaggioDesc {
+    position: absolute;
+    left:0;
+    bottom:0;
+    padding:0.5rem;
+    color:#efefef;
+
+    width: 100%;
+    
+
+    /*gradient da trasp. a nero semitrasparente*/
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.6881346288515406) 0%, rgba(0,0,0,0) 100%);
+
+}
 
 .elencoCittaGrid {
     display: flex; /*fai affiancare gli elementi*/
@@ -88,11 +109,24 @@ body {
 
     width:100%;
     height:20rem;
-
+    border:0.25rem solid white;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    
+}
 
+.cittaDesc {
+    padding:1rem 1rem 4rem 1rem;
+    color:#efefef;
+    font-size: 2rem;
+    font-weight: bold;
+
+    text-shadow: 1px 1px #222222;
+
+    /*sfondo semitrasparente sfumato*/
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.6881346288515406) 0%, rgba(0,0,0,0) 100%);
 }
 
 
@@ -112,7 +146,8 @@ body {
 .footerMenu {
     display: flex;
     list-style-type: none;
-    justify-content: space-evenly; /*spazia equamente sul contenitore*/
+    justify-content: space-evenly;
+     /*spazia equamente sul contenitore*/
     margin:0;  /*rimuovo margini lista*/
     padding:0; /*rimuovo margini interni lista */
    
@@ -124,7 +159,13 @@ body {
     /* REGOLE PER SCHERMI GRANDI */ 
 
     .viaggioItem { /*su desktop occupa 1/5 dello spazio */
-        width:20%;
+        width: calc(20% - 1rem);
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+
+
+
+
     }
 
     .cittaItem { /*dimensione su schermi grandi*/
@@ -132,13 +173,25 @@ body {
     }
 
     .cittaItem:nth-of-type(1), .cittaItem:nth-of-type(2) {
+    /*il primo E il secondo elemento cittaItem*/
         width:50%;
     }
+
+
 
     .container {
         width:80%;
        /* margin:0 auto; non serve perché eredita dalla regola precedente*/
     }
 
+
+    
+
 }
+
+/*****TO DO
+
+- Testo su immagini
+- Containers 
+- Prima immagine blu
 
