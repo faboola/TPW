@@ -1,0 +1,29 @@
+
+
+#hero {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+#rosso {
+    background: #e81e1e;
+    color:#ffffff;
+    margin-top:6rem;
+    margin-bottom: 6rem;
+
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.logo {
+    width: 4rem;
+}
+
+.nav-link {
+    text-transform: uppercase;
+}
+
+#mainFooter {
+    background: #222;
+    color:rgb(202, 202, 202);
+    text-align: center;
+}
