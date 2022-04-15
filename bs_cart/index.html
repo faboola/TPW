@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <title>Document</title>
+</head>
+<body class="text-light bg-dark">
+<style></style>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img style="height:4rem" src="img/logo.svg" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Novità</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Chi siamo</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Negozio</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Carrello</a>
+                  </li>
+
+                
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-facebook"></i></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-instagram"></i></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-twitter"></i></a>
+                      </li>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <div class="container py-5">
+      <div class="row">
+      
+        <div class="col-lg-8">
+          <div class="py-5">
+            <div class="d-flex justify-content-between align-items-center mb-5">
+              <h1 class="fw-bold mb-0 text-black">Il tuo carrello</h1>
+              <p class="mb-0 text-muted">3 items</>
+            </div>
+            <hr class="my-4">
+
+            <div class="row mb-4 d-flex justify-content-between align-items-center">
+              <div class="col-lg-2">
+                <img
+                  src="img/strokes.jpg"
+                  class="img-fluid rounded-3 w-100 mb-3" alt="vinile">
+              </div>
+              <div class="col-7 col-lg-3 col-xl-3">
+                <h6 class="text-muted">Vinile</h6>
+                <h6 class="text-black mb-0">The New Abnormal</h6>
+              </div>
+              <div class="col-3 col-md-3 col-lg-3 d-flex">
+                <button class="btn btn-link px-2"
+                  onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                  <i class="bi bi-dash"></i>
+                </button>
+
+                <input id="form1" min="0" name="quantity" value="1" type="number"
+                  class="form-control form-control-sm" />
+
+                <button class="btn btn-link px-2"
+                  onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                  <i class="bi bi-plus"></i>
+                </button>
+              </div>
+              <div class="col-2 col-lg-4 text-end">
+                <h6 class="mb-0">€ 20.00</h6>
+              </div>
+             
+            </div>
+
+            <hr class="my-4">
+
+            <div class="row mb-4 d-flex justify-content-between align-items-center">
+              <div class="col-lg-2">
+                <img
+                  src="img/strokes.jpg"
+                  class="img-fluid rounded-3 w-100 mb-3" alt="vinile">
+              </div>
+              <div class="col-7 col-lg-3 col-xl-3">
+                <h6 class="text-muted">Vinile</h6>
+                <h6 class="text-black mb-0">The New Abnormal</h6>
+              </div>
+              <div class="col-3 col-md-3 col-lg-3 d-flex">
+                <button class="btn btn-link px-2"
+                  onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                  <i class="bi bi-dash"></i>
+                </button>
+
+                <input id="form1" min="0" name="quantity" value="1" type="number"
+                  class="form-control form-control-sm" />
+
+                <button class="btn btn-link px-2"
+                  onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                  <i class="bi bi-plus"></i>
+                </button>
+              </div>
+              <div class="col-2 col-lg-4 text-end">
+                <h6 class="mb-0">€ 20.00</h6>
+              </div>
+             
+            </div>
+            
+
+         
+
+            <hr class="my-4">
+
+            <div class="row mb-4 d-flex justify-content-between align-items-center">
+              <div class="col-lg-2">
+                <img
+                  src="img/strokes.jpg"
+                  class="img-fluid rounded-3 w-100 mb-3" alt="vinile">
+              </div>
+              <div class="col-7 col-lg-3 col-xl-3">
+                <h6 class="text-muted">Vinile</h6>
+                <h6 class="text-black mb-0">The New Abnormal</h6>
+              </div>
+              <div class="col-3 col-md-3 col-lg-3 d-flex">
+                <button class="btn btn-link px-2"
+                  onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                  <i class="bi bi-dash"></i>
+                </button>
+
+                <input id="form1" min="0" name="quantity" value="1" type="number"
+                  class="form-control form-control-sm" />
+
+                <button class="btn btn-link px-2"
+                  onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                  <i class="bi bi-plus"></i>
+                </button>
+              </div>
+              <div class="col-2 col-lg-4 text-end">
+                <h6 class="mb-0">€ 20.00</h6>
+              </div>
+             
+            </div>
+
+            <div class="pt-5">
+              <h6 class="mb-0"><a href="#!" class="text-body"><i
+                    class="fas fa-long-arrow-alt-left me-2"></i>Torna al negozio</a></h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- COLONNA CON RIEPILOGO -->
+
+        <div class="col-lg-4">
+          <div class="p-5">
+            <h3 class="fw-bold mb-5 mt-2 pt-1">Riepilogo orgine</h3>
+            <hr class="my-4">
+
+            <div class="d-flex justify-content-between mb-4">
+              <h5 class="text-uppercase">OGGETTI: <div class="badge bg-primary">3</div></h5>
+              <p>€ 132.00</p>
+            </div>
+
+            <h5 class="text-uppercase mb-3">Spedizione</h5>
+
+            <div class="mb-4 pb-2">
+              <select class="form-select">
+                <option value="1">Spedizione standard- €5.00</option>
+                <option value="2">Spedizione rapida € 10.00</option>
+                <option value="3">Consegna a cavallo € 50.00</option>
+              </select>
+            </div>
+
+            <h5 class="text-uppercase mb-3">Codice Sconto</h5>
+
+            <div class="mb-5">
+              <div class="form-outline">
+                <input type="text" id="form3Examplea2" class="form-control form-control-lg" />
+                <label class="form-label" for="form3Examplea2">Inserisci codice</label>
+              </div>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="d-flex justify-content-between mb-5">
+              <h5 class="text-uppercase">Totale</h5>
+              <h5>€ 137.00</h5>
+            </div>
+
+            <button type="button" class="btn btn-primary"
+            >Acquista</button>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
