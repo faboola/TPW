@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Title</title>
+
+    <!-- STYLESHEET DI BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- STYLESHEET DI FONT-AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- STYLESHEET DI SWIPER PER IL CAROUSEL -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+    <!-- IL MIO FOGLIO DI STILE! -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header id="mainHeader">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-lg">
+                <a class="navbar-brand" href="#">LOGO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Giradischi</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Radio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contatti</a>
+                        </li>
+
+
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="hero">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+
+
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <h2>Titolo Offerta</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam quasi quidem nihil repellendus nostrum saepe maxime soluta corrupti recusandae explicabo.</p>
+                            <button class="btn btn-primary">Scopri di più</button>
+                        </div>
+                        <div class="col-lg-6">
+                            <img class="img-fluid" src="https://source.unsplash.com/900x600/?music" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="swiper-slide">
+              
+                    <img src="https://source.unsplash.com/1200x400/?music" alt="">
+         
+                <div class="slideText position-absolute bottom-0 start-0 h-100 w-50">
+                    <!-- LE CLASSI h- e w- servono a dimensionare il div -->
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, mollitia.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, quidem.</p>
+                    <button class="btn btn-outline-light">Read More</button>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+              
+                <img src="https://source.unsplash.com/1200x400/?music" alt="">
+     
+            <div class="slideText position-absolute bottom-0 end-0 w-100">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, mollitia.
+            </div>
+        </div>
+
+       
+
+
+           </div>
+           
+           <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+        
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+
+    <main>
+
+        <div class="container">
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+
+                <!-- COL START -->
+                <div class="col shopItem mb-4">
+                    <div class="card">
+                        <img src="img/cover_01.jpg" class="card-img-top" alt="The Wall">
+                        <div class="card-body">
+                            <div class="card-title"><span class="band">Pink Floyd</span><span class="album">The Wall</span></div>
+                        </div>
+
+                        <div class="card-body d-flex justify-content-between align-items-center">
+                            <span class="prezzo badge bg-light text-dark fs-5">€100</span>
+                            <div class="btn btn-primary"> <i class="fa-solid fa-cart-plus"></i> Acquista</div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- COL END -->
+
+                <!-- COL START -->
+                <div class="col shopItem mb-4">
+                    <div class="card">
+                        <img src="img/cover_02.jpg" class="card-img-top" alt="The Wall">
+                        <div class="card-body">
+                            <div class="card-title"><span class="band">Stromae</span><span class="album">Multitude</span></div>
+                        </div>
+
+                        <div class="card-body d-flex justify-content-between align-items-center">
+                            <span class="prezzo badge bg-light text-dark fs-5">€100</span>
+                            <div class="btn btn-primary"> <i class="fa-solid fa-cart-plus"></i> Acquista</div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- COL END -->
+
+                <!-- COL START -->
+                <div class="col shopItem mb-4">
+                    <div class="card">
+                        <img src="img/cover_03.jpg" class="card-img-top" alt="The Wall">
+                        <div class="card-body">
+                            <div class="card-title"><span class="band">Metallica</span><span class="album">And Justice for All</span></div>
+                        </div>
+
+                        <div class="card-body d-flex justify-content-between align-items-center">
+                            <span class="prezzo badge bg-light text-dark fs-5">€100</span>
+                            <div class="btn btn-primary"> <i class="fa-solid fa-cart-plus"></i> Acquista</div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- COL END -->
+
+                <!-- COL START -->
+                <div class="col shopItem mb-4">
+                    <div class="card">
+                        <img src="img/cover_04.jpg" class="card-img-top" alt="The Wall">
+                        <div class="card-body">
+                            <div class="card-title"><span class="band">The Weeknd</span><span class="album">Dawn FM</span></div>
+                        </div>
+
+                        <div class="card-body d-flex justify-content-between align-items-center">
+                            <span class="prezzo badge bg-light text-dark fs-5">€100</span>
+                            <div class="btn btn-primary"> <i class="fa-solid fa-cart-plus"></i> Acquista</div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- COL END -->
+
+                <!-- COL START -->
+                <div class="col shopItem mb-4">
+                    <div class="card">
+                        <img src="img/cover_05.jpg" class="card-img-top" alt="The Wall">
+                        <div class="card-body">
+                            <div class="card-title"><span class="band">Daft Punk</span><span class="album">Homework</span></div>
+                        </div>
+
+                        <div class="card-body d-flex justify-content-between align-items-center">
+                            <span class="prezzo badge bg-light text-dark fs-5">€100</span>
+                            <div class="btn btn-primary"> <i class="fa-solid fa-cart-plus"></i> Acquista</div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- COL END -->
+
+                <!-- COL START -->
+                <div class="col shopItem mb-4">
+                    <div class="card">
+                        <img src="img/cover_06.jpg" class="card-img-top" alt="The Wall">
+                        <div class="card-body">
+                            <div class="card-title"><span class="band">The Beatles</span><span class="album">Abbey Road</span></div>
+                        </div>
+
+                        <div class="card-body d-flex justify-content-between align-items-center">
+                            <span class="prezzo badge bg-light text-dark fs-5">€100</span>
+                            <div class="btn btn-primary"> <i class="fa-solid fa-cart-plus"></i> Acquista</div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- COL END -->
+                <!-- COL START -->
+                <div class="col shopItem mb-4">
+                    <div class="card">
+                        <img src="img/cover_07.jpg" class="card-img-top" alt="The Wall">
+                        <div class="card-body">
+                            <div class="card-title"><span class="band">Booriana</span><span class="album">En?gma</span></div>
+                        </div>
+
+                        <div class="card-body d-flex justify-content-between align-items-center">
+                            <span class="prezzo badge bg-light text-dark fs-5">€100</span>
+                            <div class="btn btn-primary"> <i class="fa-solid fa-cart-plus"></i> Acquista</div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- COL END -->
+
+                <!-- COL START -->
+                <div class="col shopItem mb-4">
+                    <div class="card">
+                        <img src="img/cover_08.jpg" class="card-img-top" alt="The Wall">
+                        <div class="card-body">
+                            <div class="card-title"><span class="band">David Bowie</span><span class="album">Low</span></div>
+                        </div>
+
+                        <div class="card-body d-flex justify-content-between align-items-center">
+                            <span class="prezzo badge bg-light text-dark fs-5">€100</span>
+                            <div class="btn btn-primary"> <i class="fa-solid fa-cart-plus"></i> Acquista</div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- COL END -->
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+        <div id="multipleSlides">
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+
+
+                <div class="swiper-slide">Lorem, ipsum.</div>
+
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </main>
+
+    <!-- JS DI BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+    <!-- JS DI SWIPER PER IL CAROUSEL -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+    const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  //direction: 'vertical',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+    </script>
+
+
+
+</body>
+
+</html>

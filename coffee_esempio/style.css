@@ -1,0 +1,113 @@
+body {
+    background: #191711;
+    font-family: 'Manrope',sans-serif;
+}
+
+h1, h2, h3 {
+    font-weight: 800;
+    text-transform: uppercase; /*se faccio questo TUTTI I TITOLI DI TUTTO IL SITO SARANNO MAIUSCOLI*/
+}
+
+#mainHeader {
+    z-index:1;
+}
+
+.navbar-brand img {
+    width:4rem; /*riduco l'immagine del logo*/
+}
+
+.nav-item {
+    text-transform: uppercase;
+}
+
+#banner {
+    background:url('img/coffee_vert.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 10rem;
+    
+}
+
+#banner:after {
+    content:' '; /*se utilizziamo :before o :after questo è obbligatorio*/
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:50vh;
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0.8+2,0+100;Neutral+Density */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.8) 2%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.8) 2%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.8) 2%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+
+
+}
+
+#slide {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+footer#footer {
+    background-color: #292929;
+}
+
+/* ESEMPIO PULSANTE "CUSTOM" SENZA BOOTSTRAP */
+
+.myButton {
+    padding: 0.25rem 1.75rem 0.25rem 1.75rem;
+    border:1px solid #efefef;
+    color:#efefef;
+    text-decoration: none;
+    border-radius:30px;
+    transition: all 0.2s ease-in-out;
+}
+
+.myButton:hover { /*al passaggio del mouse*/
+    background:#efefef;
+    color:#222;
+
+}
+
+
+@media (min-width:992px) {
+
+    #banner {
+        background:url('img/coffee_horizontal.jpg');
+        padding-top: 0; /*sovrascrivo e annullo il padding della versione mobile*/
+    }
+
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                 OFF-CANVAS                                 */
+/* -------------------------------------------------------------------------- */
+
+
+@media (max-width: 991.98px) {
+    .offcanvas-collapse {
+      position: fixed;
+      top: 80px; /* Height of navbar */
+      bottom: 0;
+      left: 100%;
+      width: 100%;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      overflow-y: auto;
+      visibility: hidden;
+      background-color: #222;
+      transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+      text-align: right;
+    }
+
+    .offcanvas-collapse.open {
+      visibility: visible;
+      transform: translateX(-100%);
+
+      z-index:99;
+    }
+  }
