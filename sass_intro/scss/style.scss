@@ -1,0 +1,32 @@
+/* -------------------------------------------------------------------------- */
+/*                             FUNZIONI BASE SASS                             */
+/* -------------------------------------------------------------------------- */
+
+//VARIABILI
+$black : #222222;
+$white : #efefef;
+$primary : #ffcc00; 
+$secondary : #105f97;
+$dark : #230404;
+
+$sansFont : 'Helvetica', Arial, sans-serif;
+$serifFont : 'Garmond', Times, serif;
+
+$fullWidth: 100%;
+$bigFont : 4rem;
+
+body {
+    background: $white;
+    color:$black;
+}
+
+h1 {
+    color:$primary; //titolo colorato
+    font-family: $serifFont;
+    font-size: $bigFont;
+    font-weight: bold;
+}
+
+p {
+    font-family: $sansFont;
+}
