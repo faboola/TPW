@@ -1,32 +1,104 @@
 /* -------------------------------------------------------------------------- */
 /*                             FUNZIONI BASE SASS                             */
 /* -------------------------------------------------------------------------- */
+@import "normalize";
+@import "colors"; //nomi e stili colore
+@import "variables"; //variabili del css
 
-//VARIABILI
-$black : #222222;
-$white : #efefef;
-$primary : #ffcc00; 
-$secondary : #105f97;
-$dark : #230404;
-
-$sansFont : 'Helvetica', Arial, sans-serif;
-$serifFont : 'Garmond', Times, serif;
-
-$fullWidth: 100%;
-$bigFont : 4rem;
+@import "mixins"; //importo i MIXIN (funzioni)
+@import "typography"; //stili di testo
 
 body {
-    background: $white;
-    color:$black;
+    @include myGradient(blue,purple);
 }
 
-h1 {
-    color:$primary; //titolo colorato
-    font-family: $serifFont;
-    font-size: $bigFont;
-    font-weight: bold;
+//applico il mixin a un elemento con @include
+
+.button {
+    @include myButton(); //crea un pulsante
 }
 
-p {
-    font-family: $sansFont;
+.send {
+    @include myButton($secondary,$secondary, true);
 }
+
+
+ul.menu {
+
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    display: flex;
+
+    li {
+        padding:0.5rem 1.5rem;
+
+        a {
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: bold;
+
+            &.active {
+                color:$primary;
+                border:1px solid $secondary;
+            }
+
+            &:hover {
+                background:$secondary;
+                color:$white;
+            }
+        }
+
+       
+
+    }
+
+
+}
+
+//ESEMPI EXTEND
+
+#hero {
+    h1 {
+        @extend .hugeText; //prendi le regole di .hugeText e assegnale a H1 dentro #hero
+    }
+}
+
+//ESEMPI COLORE 
+
+#hero {
+    background: grayscale($secondary); //converte in scala di grigio
+
+    background: complement(#3EB300); //trasforma nel colore complementare 
+
+    background:lighten(#ff0000,20%); //schiarisce di n%
+    background: darken(#ff0000,20%); //scurisce di n%
+
+    background: desaturate(#ff0000,20%); //riduce la saturazione
+
+    background:url('https://source.unsplash.com/1920x1080/city');
+    background-size: cover;
+
+    h1 {
+        color: transparentize(white,0.5); //rende il colore trasparente
+    }
+
+}
+
+
+//tabella striped
+
+.myTable {
+    tr {
+        background: $white;
+        &:nth-of-type(odd) {
+            background: darken($white,5%);
+        }
+    }
+}
+
+
+
+
+
+
