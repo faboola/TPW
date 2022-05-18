@@ -3,6 +3,9 @@
 *.log
 *.sql
 *.sqlite
+
+# NODE #
+node_modules/
  
 # OS generated files #
 ######################
