@@ -5,12 +5,56 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+//MY COLORS
+
+$shamrockGreen : #1BA268;
+
 // scss-docs-start import-stack
 // Configuration
 @import "../node_modules/bootstrap/scss/functions";
 
-//Variables Override
+/* -------------------------------------------------------------------------- */
+/*                             OVERRIDE VARIABILI                             */
+/* -------------------------------------------------------------------------- */
+$white : #fff;
+// Grayscale vars
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
 
+// Color vars
+$blue: #3B97DE;
+$dblue : #1D56A0;
+$ddblue : #1F314A;
+$dddblue: #123767;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #d63384;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #198754;
+$teal: #20c997;
+$cyan: #0dcaf0;
+
+
+$primary : $shamrockGreen;//COLORE PRIMARIO (pulsanti, etc)
+$enable-rounded: false; //abilita o disabilita angoli arrotondati
+$enable-grid-classes:  true ; //mettere a FALSE per disabilitare le grid-classes 
+
+$spacer: 1rem; //per modificare la base di margin e padding es. mb-3 pt-5 etc
+
+$body-bg:                   $white; //colore sfondo body
+$body-color:                $gray-900; //colore di default del testo
+
+$link-color:                $primary; //colore dei link
+$link-decoration:           underline; //link sottolineato o no?
 
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
@@ -57,8 +101,9 @@
 // scss-docs-end import-stack
 
 
+// I MIEI STILI CUSTOM!
 
-
-body {
-    font-family: 'Times';
+.myClass {
+    background: $gray-500;
 }
+
