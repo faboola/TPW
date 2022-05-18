@@ -56,6 +56,21 @@ $body-color:                $gray-900; //colore di default del testo
 $link-color:                $primary; //colore dei link
 $link-decoration:           underline; //link sottolineato o no?
 
+
+//TIPI DI CARATTERE
+
+//se uso Google Fonts posso mettere al posto di questa font-family il nome della font-family di Google Fonts 
+//ad esempio: 
+$font-family-sans-serif: "Poppins", sans-serif;
+//$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+// Se ci serve anche un font SERIF possiamo associare la font family a una variabile
+//$font-family-serif: 'Times',serif;
+
+/* -------------------------------------------------------------------------- */
+/*                       IMPORTO IL RESTO DEI COMPONENTI                      */
+/* -------------------------------------------------------------------------- */
+
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/utilities";
@@ -106,4 +121,5 @@ $link-decoration:           underline; //link sottolineato o no?
 .myClass {
     background: $gray-500;
 }
+
 
