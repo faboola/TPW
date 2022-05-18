@@ -116,10 +116,10 @@ $font-family-sans-serif: "Poppins", sans-serif;
 // scss-docs-end import-stack
 
 
+//I MIEI MIXIN CUSTOM
+@import "mymixins";
+
+
 // I MIEI STILI CUSTOM!
-
-.myClass {
-    background: $gray-500;
-}
-
+@import "custom"; //NOTA: non serve indicare l'estensione se includiamo un parziale
 
