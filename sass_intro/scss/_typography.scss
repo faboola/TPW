@@ -1,0 +1,32 @@
+//STILI PER I FONT
+
+body {
+    font-family: $sansFont;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: $serifFont;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: $serifFont;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.hugeText {
+    font-size: 8rem;
+    font-weight: bold;
+    color:$secondary;
+}

@@ -1,0 +1,35 @@
+@mixin myButton($bgColor: $primary ,$textColor: $white, $hollow:false) {
+    //posso definire dei parametri, e posso assegnare dei valori di default
+
+    background: $bgColor; //parametro passato dalla funzione
+    padding:0.5rem 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 10px;
+    color:$textColor;
+    border:1px solid $textColor;
+
+    &:hover {
+        background:darken($bgColor,5%);
+    }
+
+    @if $hollow==true { //se passo il parametro TRUE
+        background:transparent;
+        border:1px solid $bgColor;
+        transition:all 0.5s ease-in-out;
+
+        &:hover { 
+            background: $bgColor;
+            color: invert($bgColor);
+        }
+
+   
+      }
+}
+
+//mixin per gradient
+
+@mixin myGradient($from,$to) {
+ background: $from;
+background: linear-gradient(180deg, $from 0%, $to 100%);
+} 
