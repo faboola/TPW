@@ -1,0 +1,23 @@
+
+
+.heroWrapper::before { /* creo pseudo elemento*/
+    content:''; /*obbligatorio, altrimenti non funziona :before o :after */
+    background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+
+position:absolute;
+z-index:-1; /*altrimenti si sovrappone al resto*/
+top:-100%; /*posizionamento negativo: sposto IN ALTO*/
+left:-50%; /*posizionamento negativo: sposto VERSO SINISTRA dall'origine*/
+
+width: 200%; /*lo ingrandisco*/
+height:200%;
+border-radius:50%; /*bordo arrotondato*/
+
+}
+
+
+#hero {
+    position: relative; /*per posizionare l'elemento ABSOLUTE dopo*/
+    overflow:hidden; /*FONDAMENTALE altrimenti si allarga tutto. Stabilisce che tutto ciò che va oltre la dimensione dell'elelento viene NASCOSTO*/
+}
